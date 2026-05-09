@@ -268,6 +268,7 @@ parse_log_sphinx = parse_log_pytest_v2
 
 
 MAP_REPO_TO_PARSER_PY = {
+    "georgikolev17/eval_regress_test": parse_log_pytest,
     "astropy/astropy": parse_log_astropy,
     "django/django": parse_log_django,
     "marshmallow-code/marshmallow": parse_log_marshmallow,

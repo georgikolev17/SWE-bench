@@ -902,8 +902,18 @@ SPECS_PYDICOM.update(
 
 SPECS_HUMANEVAL = {k: {"python": "3.9", "test_cmd": "python"} for k in ["1.0"]}
 
+# TODO: Check later, newly-added
+SPECS_EVAL_REGRESS_TEST = {
+    "demo": {
+        "python": "3.10",
+        "install": "python -m pip install pytest",
+        "test_cmd": TEST_PYTEST,
+    }
+}
+
 # Constants - Task Instance Instllation Environment
 MAP_REPO_VERSION_TO_SPECS_PY = {
+    "georgikolev17/eval_regress_test": SPECS_EVAL_REGRESS_TEST,
     "astropy/astropy": SPECS_ASTROPY,
     "dbt-labs/dbt-core": SPECS_DBT_CORE,
     "django/django": SPECS_DJANGO,
